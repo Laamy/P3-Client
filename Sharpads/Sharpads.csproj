@@ -106,7 +106,6 @@
     <Compile Include="Category\Modules\YBoost.cs" />
     <Compile Include="Category\Modules\Zoom.cs" />
     <Compile Include="Category\VisualModule.cs" />
-    <Compile Include="IO\FileMan.cs" />
     <Compile Include="KeyHooks\KeybindHandler.cs" />
     <Compile Include="KeyHooks\KEYS.cs" />
     <Compile Include="KeyHooks\Mouse.cs" />

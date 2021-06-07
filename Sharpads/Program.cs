@@ -1,7 +1,6 @@
 ﻿using Sharpads.Category;
-using Sharpads.IO;
+using Sharpads.KeyHooks;
 using Sharpads.UI;
-using Sharpads.UI.Controls;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -21,25 +20,16 @@ namespace Sharpads
         {
             Process.Start("minecraft://");
 
-            FileMan fm = new FileMan();
-            if (fm.configFile.Exists)
-                fm.readConfig();
-            else
-                fm.saveConfig();
-            fm.readConfig();
-
             mem.openProcess();
+            new KeybindHandler();
 
-            new KeybindHandler(); // Create and setup mc key hooks
+            new Mouse(); // not needed
+            new KEYS(); // not needed
 
             Thread.Sleep(100);
-
             new CategoryHandler();
-
             Thread.Sleep(100);
-
             new ModuleHandler();
-
             Thread.Sleep(100);
 
 
@@ -50,9 +40,6 @@ namespace Sharpads
             uiApp.Start();
 
             Thread.Sleep(100);
-
-            label = new CCLabel();
-            panel = new CCPanel();
 
             while (true)
             {
@@ -160,14 +147,5 @@ namespace Sharpads
             }
             catHeight = (guiSize * scale) * CategoryHandler.registry.categories.Count;
         }
-
-        /*
-                $"  {W1_}  \r\n" +
-                $"{A1_} {S1_} {D1_}\r\n" +
-                $"{B1_} {B1_} {B1_}",
-         * */
-
-        public static CCLabel label;
-        public static CCPanel panel;
     }
 }
