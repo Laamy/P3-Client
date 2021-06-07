@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D495991-F46A-4D1C-8F20-4D2FB82D1F69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sharpads</RootNamespace>
+    <AssemblyName>Sharpads</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache.cs" />
+    <Compile Include="Category\Category.cs" />
+    <Compile Include="Category\CategoryHandler.cs" />
+    <Compile Include="Category\Module.cs" />
+    <Compile Include="Category\ModuleHandler.cs" />
+    <Compile Include="Category\Modules\Hitbox.cs" />
+    <Compile Include="Category\Modules\Lagcall.cs" />
+    <Compile Include="Category\Modules\YEditor.cs" />
+    <Compile Include="Category\Modules\TPFlight.cs" />
+    <Compile Include="Category\Modules\Limiter.cs" />
+    <Compile Include="Category\Modules\GMSpoof.cs" />
+    <Compile Include="Category\Modules\FixHitbox.cs" />
+    <Compile Include="Category\Modules\SelfKick.cs" />
+    <Compile Include="Category\Modules\LBSlowFall.cs" />
+    <Compile Include="Category\Modules\JitterFly.cs" />
+    <Compile Include="Category\Modules\Recall.cs" />
+    <Compile Include="Category\Modules\WaterSpeed.cs" />
+    <Compile Include="Category\Modules\TriggerBot.cs" />
+    <Compile Include="Category\Modules\BoostHit.cs" />
+    <Compile Include="Category\Modules\CubeCraftFly.cs" />
+    <Compile Include="Category\Modules\TestModule.cs" />
+    <Compile Include="Category\Modules\LBSF.cs" />
+    <Compile Include="Category\Modules\ExtraMods.cs" />
+    <Compile Include="Category\Modules\ArrayList.cs" />
+    <Compile Include="Category\Modules\AutoSprint.cs" />
+    <Compile Include="Category\Modules\Airjump.cs" />
+    <Compile Include="Category\Modules\AutoWalk.cs" />
+    <Compile Include="Category\Modules\Bhop.cs" />
+    <Compile Include="Category\Modules\BounceFly.cs" />
+    <Compile Include="Category\Modules\Eject.cs" />
+    <Compile Include="Category\Modules\Glide.cs" />
+    <Compile Include="Category\Modules\Highjump.cs" />
+    <Compile Include="Category\Modules\Jetpack.cs" />
+    <Compile Include="Category\Modules\AlwaysDay.cs" />
+    <Compile Include="Category\Modules\Noclip.cs" />
+    <Compile Include="Category\Modules\Jesus.cs" />
+    <Compile Include="Category\Modules\Nightmode.cs" />
+    <Compile Include="Category\Modules\Phase.cs" />
+    <Compile Include="Category\Modules\Sex_Lifeboat_Staff.cs" />
+    <Compile Include="Category\Modules\MineplexFly.cs" />
+    <Compile Include="Category\Modules\NoSwing.cs" />
+    <Compile Include="Category\Modules\PlayerSpeed.cs" />
+    <Compile Include="Category\Modules\QuerkBot.cs" />
+    <Compile Include="Category\Modules\RapidClick.cs" />
+    <Compile Include="Category\Modules\Reach.cs" />
+    <Compile Include="Category\Modules\StepHeight.cs" />
+    <Compile Include="Category\Modules\Velocity.cs" />
+    <Compile Include="Category\Modules\YBoost.cs" />
+    <Compile Include="Category\Modules\Zoom.cs" />
+    <Compile Include="Category\VisualModule.cs" />
+    <Compile Include="IO\FileMan.cs" />
+    <Compile Include="KeyHooks\KeybindHandler.cs" />
+    <Compile Include="KeyHooks\KEYS.cs" />
+    <Compile Include="KeyHooks\Mouse.cs" />
+    <Compile Include="mem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDK\HexadecimalEncoding.cs" />
+    <Compile Include="SDK\Memory.cs" />
+    <Compile Include="SDK\Pointers.cs" />
+    <Compile Include="SDK\SDK\Actor.cs" />
+    <Compile Include="SDK\SDK\ClientInstance.cs" />
+    <Compile Include="SDK\SDK\Debug.cs" />
+    <Compile Include="SDK\SDK\Entity.cs" />
+    <Compile Include="SDK\SDK\EntityRegistry.cs" />
+    <Compile Include="SDK\SDK\FloatOption.cs" />
+    <Compile Include="SDK\SDK\Level.cs" />
+    <Compile Include="SDK\SDK\LocalPlayer.cs" />
+    <Compile Include="SDK\SDK\Minecraft.cs" />
+    <Compile Include="SDK\SDK\Packet.cs" />
+    <Compile Include="SDK\SDK\RakNetInstance.cs" />
+    <Compile Include="SDK\SDK\SDKObject.cs" />
+    <Compile Include="SDK\SDK\Utils.cs" />
+    <Compile Include="SDK\Statics.cs" />
+    <Compile Include="UI\Controls\CCPanel.cs" />
+    <Compile Include="UI\Controls\CustomControl.cs" />
+    <Compile Include="UI\Controls\CCLabel.cs" />
+    <Compile Include="UI\Render.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinHooks.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Render.resx">
+      <DependentUpon>Render.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
