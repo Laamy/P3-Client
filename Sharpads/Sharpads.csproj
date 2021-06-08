@@ -63,6 +63,7 @@
     <Compile Include="Category\ModuleHandler.cs" />
     <Compile Include="Category\Modules\Hitbox.cs" />
     <Compile Include="Category\Modules\Lagcall.cs" />
+    <Compile Include="Category\Modules\EntityList.cs" />
     <Compile Include="Category\Modules\YEditor.cs" />
     <Compile Include="Category\Modules\TPFlight.cs" />
     <Compile Include="Category\Modules\Limiter.cs" />

@@ -18,7 +18,7 @@ namespace Sharpads.SDK.SDK
                 List<Entity> entityList = new List<Entity>();
                 for (int index = 0; index < 256; index++)
                 {
-                    Entity mob = new Entity(addr + (0x8 * index) + ",");
+                    Entity mob = new Entity(addr + (index * 8).ToString("X") + ",");
                     if (mob.type != "" && mob.type != "player") entityList.Add(mob);
                 }
                 return entityList;
@@ -31,7 +31,7 @@ namespace Sharpads.SDK.SDK
                 List<Entity> entityList = new List<Entity>();
                 for (int index = 0; index < 256; index++)
                 {
-                    Entity mob = new Entity(addr + (0x8 * index) + ",");
+                    Entity mob = new Entity(addr + (index * 8).ToString("X") + ",");
                     if (mob.type == "player") entityList.Add(mob);
                 }
                 return entityList;
@@ -43,7 +43,7 @@ namespace Sharpads.SDK.SDK
             {
                 List<Entity> entityList = new List<Entity>();
                 for (int index = 0; index < 256; index++)
-                    entityList.Add(new Entity(addr + (0x8 * index) + ","));
+                    entityList.Add(new Entity(addr + (index * 8).ToString("X") + ","));
                 return entityList;
             }
         }

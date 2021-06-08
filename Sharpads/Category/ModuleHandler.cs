@@ -50,6 +50,7 @@ namespace Sharpads.Category
             // Visual
             new AlwaysDay();
             new ArrayList();
+            new EntityList();
             new ExtraMods();
             new Nightmode();
             new NoSwing();

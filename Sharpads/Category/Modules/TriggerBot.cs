@@ -15,7 +15,7 @@ namespace Sharpads.Category.Modules
 
         public override void onTick()
         {
-            if (Minecraft.ci.lp.lookingAtEntity && mem.mcFocused())
+            if (Minecraft.ci.lp.lookingAtEntity && mem.isMinecraftFocused())
                 Mouse.MouseEvent(Mouse.MouseEventFlags.MOUSEEVENTF_LEFTDOWN);
         }
     }

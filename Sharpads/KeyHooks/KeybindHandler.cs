@@ -11,7 +11,7 @@ namespace Sharpads
     {
         public static bool isKeyDown(char key)
         {
-            if (mem.mcFocused())
+            if (mem.isMinecraftFocused())
                 return mem.GetAsyncKeyState(key);
             return false;
         }
@@ -45,7 +45,7 @@ namespace Sharpads
             {
                 try
                 {
-                    if (mem.mcFocused())
+                    if (mem.isMinecraftFocused())
                     {
                         for (char c = (char)0; c < 0xFF; c++)
                         {

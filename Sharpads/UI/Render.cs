@@ -89,7 +89,7 @@ namespace Sharpads.UI
                 WindowState = FormWindowState.Maximized;
             }
             else fullScOff = 0;
-            mem.Rect mcRect = mem.getMinecraftRect();
+            mem.RECT mcRect = mem.getMinecraftRect();
             x = mcRect.Left + 9;
             y = mcRect.Top + 34 + fullScOff;
             width = mcRect.Right - mcRect.Left - 18;

@@ -20,7 +20,7 @@ namespace Sharpads
         {
             Process.Start("minecraft://");
 
-            mem.openProcess();
+            mem.openGame();
             new KeybindHandler();
 
             new Mouse(); // not needed
@@ -45,7 +45,7 @@ namespace Sharpads
             {
                 try
                 {
-                    if (mem.mcFocused())
+                    if (mem.isMinecraftFocused())
                     {
                         if (Render.handle.Opacity != 100)
                             Render.handle.Opacity = 100;
