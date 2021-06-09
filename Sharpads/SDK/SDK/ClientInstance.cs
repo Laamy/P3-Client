@@ -13,12 +13,6 @@ namespace Sharpads.SDK.SDK
         public LocalPlayer lp
         { get => new LocalPlayer(Pointers.localPlayer); }
 
-        public Debug debug
-        { get => new Debug(Pointers.debug); }
-
-        public RakNetInstance rakNetInstance
-        { get => new RakNetInstance(Pointers.rakNet); }
-
         public FloatOption floatOption
         { get => new FloatOption(Pointers.floatOption); }
 

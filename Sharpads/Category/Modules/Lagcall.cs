@@ -14,7 +14,7 @@ namespace Sharpads.Category.Modules
         public List<List<float>> prevPositions = new List<List<float>>();
         public Lagcall() : base("Lagcall", CategoryHandler.registry.categories[4], (char)0x07, false)
         {
-            startTimer(750);
+            startTimer(250);
         }
 
         public override void onTimedTick()

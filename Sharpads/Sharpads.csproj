@@ -61,13 +61,11 @@
     <Compile Include="Category\CategoryHandler.cs" />
     <Compile Include="Category\Module.cs" />
     <Compile Include="Category\ModuleHandler.cs" />
-    <Compile Include="Category\Modules\Hitbox.cs" />
     <Compile Include="Category\Modules\Lagcall.cs" />
     <Compile Include="Category\Modules\EntityList.cs" />
     <Compile Include="Category\Modules\YEditor.cs" />
     <Compile Include="Category\Modules\TPFlight.cs" />
     <Compile Include="Category\Modules\Limiter.cs" />
-    <Compile Include="Category\Modules\GMSpoof.cs" />
     <Compile Include="Category\Modules\FixHitbox.cs" />
     <Compile Include="Category\Modules\SelfKick.cs" />
     <Compile Include="Category\Modules\LBSlowFall.cs" />
@@ -90,10 +88,8 @@
     <Compile Include="Category\Modules\Glide.cs" />
     <Compile Include="Category\Modules\Highjump.cs" />
     <Compile Include="Category\Modules\Jetpack.cs" />
-    <Compile Include="Category\Modules\AlwaysDay.cs" />
     <Compile Include="Category\Modules\Noclip.cs" />
     <Compile Include="Category\Modules\Jesus.cs" />
-    <Compile Include="Category\Modules\Nightmode.cs" />
     <Compile Include="Category\Modules\Phase.cs" />
     <Compile Include="Category\Modules\Sex_Lifeboat_Staff.cs" />
     <Compile Include="Category\Modules\MineplexFly.cs" />
@@ -118,7 +114,6 @@
     <Compile Include="SDK\Pointers.cs" />
     <Compile Include="SDK\SDK\Actor.cs" />
     <Compile Include="SDK\SDK\ClientInstance.cs" />
-    <Compile Include="SDK\SDK\Debug.cs" />
     <Compile Include="SDK\SDK\Entity.cs" />
     <Compile Include="SDK\SDK\EntityRegistry.cs" />
     <Compile Include="SDK\SDK\FloatOption.cs" />
@@ -126,7 +121,6 @@
     <Compile Include="SDK\SDK\LocalPlayer.cs" />
     <Compile Include="SDK\SDK\Minecraft.cs" />
     <Compile Include="SDK\SDK\Packet.cs" />
-    <Compile Include="SDK\SDK\RakNetInstance.cs" />
     <Compile Include="SDK\SDK\SDKObject.cs" />
     <Compile Include="SDK\SDK\Utils.cs" />
     <Compile Include="SDK\Statics.cs" />

@@ -1,13 +1,8 @@
 ﻿using Sharpads.SDK;
 using Sharpads.SDK.SDK;
-using Sharpads.UI;
-using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Timers;
-using System.Windows.Forms;
 
 namespace Sharpads.Category.Modules
 {
@@ -21,14 +16,16 @@ namespace Sharpads.Category.Modules
             graphics.SmoothingMode = SmoothingMode.HighQuality;
             graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
 
-            int a = 9;
-            Entity lp = new Entity("0");
-            graphics.DrawString($"{lp.username}: {lp.X1}, {lp.Y1}, {lp.Z1}", Program.textFont, Program.textColor, 0, (Program.guiSize * Program.scale) * 8);
-            foreach (Entity ent in Minecraft.ci.lp.Level.Players)
-            {
-                graphics.DrawString($"{ent.username}: {ent.X1}, {ent.Y1}, {ent.Z1}", Program.textFont, Program.textColor, 0, (Program.guiSize * Program.scale) * a);
-                a++;
-            }
+            LocalPlayer lp = new LocalPlayer(Pointers.localPlayer);
+            graphics.DrawString($"{lp.username}: {lp.X1}, {lp.Y1}, {lp.Z1}\r\n" +
+                                $"{lp.type}, {lp.lookingAtEntity}, {lp.hitting}\r\n" +
+                                $", {lp.inWater}\r\n" +
+                                $"{lp.lookingAtEntity_ID}, {lp.onGround}, {lp.pitch}\r\n" +
+                                $"{lp.sprinting}, {lp.stepHeight}, {lp.swingingAnimation}\r\n" +
+                                $"{lp.velocityXYZ}, {lp.velocityXZ}, {lp.velX}\r\n" +
+                                $"{lp.velY}, {lp.velZ}, {lp.X1}\r\n" +
+                                $"{lp.X2}, {lp.Y1}, {lp.Y2}\r\n" +
+                                $"{lp.yaw}, {lp.Z1}, {lp.Z2}\r\n\r\n", Program.textFont, Program.textColor, 0, (Program.guiSize * Program.scale) * 8);
         }
     }
 }

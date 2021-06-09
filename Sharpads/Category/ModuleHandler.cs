@@ -17,7 +17,6 @@ namespace Sharpads.Category
 
             // Combat
             new BoostHit();
-            new Hitbox();
             new QuerkBot();
             new RapidClick();
             new Reach();
@@ -48,18 +47,15 @@ namespace Sharpads.Category
             new YBoost();
 
             // Visual
-            new AlwaysDay();
             new ArrayList();
             new EntityList();
             new ExtraMods();
-            new Nightmode();
             new NoSwing();
             new Zoom();
 
             // World
             new FixHitbox();
             new Lagcall();
-            new GMSpoof();
             new Noclip();
             new SelfKick();
             new Phase();
