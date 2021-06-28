@@ -23,7 +23,7 @@ namespace Sharpads.Category.Modules
                     if (enabled)
                     {
                         lastFPS = currFPS;
-                        currFPS = (int)mem.m.ReadFloat(Statics.GameFPS);
+                        currFPS = (int)0;
                         if (lastFPS != currFPS)
                             Render.handle.Invalidate();
                     }
