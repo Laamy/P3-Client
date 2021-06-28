@@ -16,7 +16,6 @@ namespace Sharpads.Category
             Console.WriteLine("Registering modules");
 
             // Combat
-            new BoostHit();
             new QuerkBot();
             new RapidClick();
             new Reach();
@@ -51,7 +50,6 @@ namespace Sharpads.Category
             new EntityList();
             new ExtraMods();
             new NoSwing();
-            new Zoom();
 
             // World
             new FixHitbox();

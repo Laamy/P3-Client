@@ -8,10 +8,10 @@ namespace Sharpads.SDK
 {
     public class Statics
     {
-        public static string Knockback_X = "base+1C51E22"; //v1.17.0
-        public static string Knockback_Y = "base+1C51E2B"; //v1.17.0
-        public static string Knockback_Z = "base+1C51E34"; //v1.17.0
-        public static string GameFPS = "base+394DB6C"; //v1.16.221
-        public static string reach = "base+3500E98"; //v1.17.0
+        public static string // Static addresses for v1.17.0
+            Knockback_X = "base+1C51E22",
+            Knockback_Y = "base+1C51E2B",
+            Knockback_Z = "base+1C51E34",
+            reach = "base+3500ED0"; // Uv1.17.2
     }
 }

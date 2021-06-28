@@ -13,9 +13,6 @@ namespace Sharpads.SDK.SDK
         public LocalPlayer lp
         { get => new LocalPlayer(Pointers.localPlayer); }
 
-        public FloatOption floatOption
-        { get => new FloatOption(Pointers.floatOption); }
-
         public Packet packet
         { get => new Packet(); }
     }

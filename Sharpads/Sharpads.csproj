@@ -73,7 +73,6 @@
     <Compile Include="Category\Modules\Recall.cs" />
     <Compile Include="Category\Modules\WaterSpeed.cs" />
     <Compile Include="Category\Modules\TriggerBot.cs" />
-    <Compile Include="Category\Modules\BoostHit.cs" />
     <Compile Include="Category\Modules\CubeCraftFly.cs" />
     <Compile Include="Category\Modules\TestModule.cs" />
     <Compile Include="Category\Modules\LBSF.cs" />
@@ -101,7 +100,6 @@
     <Compile Include="Category\Modules\StepHeight.cs" />
     <Compile Include="Category\Modules\Velocity.cs" />
     <Compile Include="Category\Modules\YBoost.cs" />
-    <Compile Include="Category\Modules\Zoom.cs" />
     <Compile Include="Category\VisualModule.cs" />
     <Compile Include="KeyHooks\KeybindHandler.cs" />
     <Compile Include="KeyHooks\KEYS.cs" />
@@ -116,13 +114,13 @@
     <Compile Include="SDK\SDK\ClientInstance.cs" />
     <Compile Include="SDK\SDK\Entity.cs" />
     <Compile Include="SDK\SDK\EntityRegistry.cs" />
-    <Compile Include="SDK\SDK\FloatOption.cs" />
     <Compile Include="SDK\SDK\Level.cs" />
     <Compile Include="SDK\SDK\LocalPlayer.cs" />
     <Compile Include="SDK\SDK\Minecraft.cs" />
     <Compile Include="SDK\SDK\Packet.cs" />
     <Compile Include="SDK\SDK\SDKObject.cs" />
     <Compile Include="SDK\SDK\Utils.cs" />
+    <Compile Include="SDK\SDK\VanillaInput.cs" />
     <Compile Include="SDK\Statics.cs" />
     <Compile Include="UI\Controls\CCPanel.cs" />
     <Compile Include="UI\Controls\CustomControl.cs" />

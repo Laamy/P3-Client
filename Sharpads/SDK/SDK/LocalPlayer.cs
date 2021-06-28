@@ -12,8 +12,13 @@ namespace Sharpads.SDK.SDK
 
         public int hitting
         {
-            get => mem.m.ReadByte(Pointers.hitting);
-            set => mem.m.WriteMemory(Pointers.hitting, "byte", value.ToString());
+            get => mem.m.ReadByte(Pointers.vanillaInput + Pointers.hitting_Hex);
+            set => mem.m.WriteMemory(Pointers.vanillaInput + Pointers.hitting_Hex, "byte", value.ToString());
+        }
+        public int placing
+        {
+            get => mem.m.ReadByte(Pointers.vanillaInput + Pointers.placing_Hex);
+            set => mem.m.WriteMemory(Pointers.vanillaInput + Pointers.placing_Hex, "byte", value.ToString());
         }
         public int sprinting
         {
@@ -144,14 +149,14 @@ namespace Sharpads.SDK.SDK
 
         public float velY
         {
-            get => mem.m.ReadFloat(addr + Pointers.VelocityY_Hex.ToString("X"));
-            set => mem.m.WriteMemory(addr + Pointers.VelocityY_Hex.ToString("X"), "float", value.ToString());
+            get => mem.m.ReadFloat(addr + (Pointers.VelocityX_Hex + 4).ToString("X"));
+            set => mem.m.WriteMemory(addr + (Pointers.VelocityX_Hex + 4).ToString("X"), "float", value.ToString());
         }
 
         public float velZ
         {
-            get => mem.m.ReadFloat(addr + Pointers.VelocityZ_Hex.ToString("X"));
-            set => mem.m.WriteMemory(addr + Pointers.VelocityZ_Hex.ToString("X"), "float", value.ToString());
+            get => mem.m.ReadFloat(addr + (Pointers.VelocityX_Hex + 8).ToString("X"));
+            set => mem.m.WriteMemory(addr + (Pointers.VelocityX_Hex + 8).ToString("X"), "float", value.ToString());
         }
 
         public float yaw
